@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="nodes-wrapper" ng-click="$ctrl.loadSubItems($ctrl.item)">
+        <div class={{$ctrl.class}}>
+            <div class="white-circle">
+
+            </div>
+        </div>
+    </div>
+</div>
+<node-list ng-if="$ctrl.item.subItems.length > 0 && $ctrl.showList" items="$ctrl.item.subItems"></node-list>
+

@@ -1,0 +1,14 @@
+<a id="link-1" ng-href="/main">Home</a><br />
+
+<div >
+        <img id="mainImage" ng-src="{{model.mainPicutre.url}}" >
+</div>
+
+<div ng-repeat="p in model.imgaes"  class="box" >
+    <div class="boxInner">
+        <img ng-src="{{p.url}}" ng-click="model.switchImages(p.label)" alt="{{p.label}}">
+
+    </div>
+</div>
+
+
